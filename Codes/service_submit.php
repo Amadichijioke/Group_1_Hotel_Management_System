@@ -52,6 +52,9 @@ if (isset($_POST['button'])) {
             </div><br>
             <div class="row">
                 <div class="col-md-6">
+                <!-- <div class="col-md-6">
+                    <input type="number" name="service_type" id="service_type" placeholder="service_cost" class="form-control" required>
+                    </div> -->
                     <select name="service_type" id="service_type" class="form-control" onchange="updateCost()" required>
                         <option value="" data-cost="0">Select Service</option>
                         <option value="gym" data-cost="50">Gym - $50/day</option>
@@ -92,6 +95,7 @@ if (isset($_POST['button'])) {
 
     <script>
         function updateCost() {
+            // const costPerDay = parseInt(document.getElementById('service_type').value) || 0;
             const serviceType = document.getElementById('service_type');
             const selectedOption = serviceType.options[serviceType.selectedIndex];
             const costPerDay = parseFloat(selectedOption.getAttribute('data-cost'));

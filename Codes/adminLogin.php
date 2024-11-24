@@ -1,7 +1,7 @@
 <?php
 session_start();
 $username = "starrysuite";
-$password = "12345678";
+$password = 12345678;
 
 if(isset($_POST['submit'])){
     $uname = htmlspecialchars($_POST['username']);
@@ -43,7 +43,7 @@ if(isset($_POST['submit'])){
 
         .login-container {
             background-color: white;
-            padding: 30px;
+            padding: 10px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             width: 100%;

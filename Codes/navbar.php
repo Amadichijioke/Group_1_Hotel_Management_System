@@ -41,9 +41,6 @@ require 'config.php';
         <li class="nav-item">
           <a class="nav-link" href="service.php">Facilities</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="spinner.php"><strong>spinner</strong></a>
-        </li>
       </ul>
       <form class="d-flex" role="search">
         <a href="search_room.php" class="btn btn-outline-success" type="submit">Search Rooms</a>
