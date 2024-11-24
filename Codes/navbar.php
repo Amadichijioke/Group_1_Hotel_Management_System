@@ -1,20 +1,6 @@
-<?php
-
-require 'config.php';
-
-    $results = [];
-    if (isset($_GET['query'])) {
-        $query = htmlspecialchars($_GET['query']); 
-        $sql = "SELECT * FROM `rooms` WHERE Room_Name LIKE :query OR Description LIKE :query";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute(['query' => '%' . $query . '%']);
-        $results = $stmt->fetchAll();
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
